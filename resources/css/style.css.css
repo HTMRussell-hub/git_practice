@@ -1,0 +1,163 @@
+header .teacozy {
+  margin-left: 10px;
+  height: 50px;
+  display: block;
+}
+
+
+header {
+  width: 100%;
+  height: 69px; /* From the spec sheet */
+  background-color: black;
+  border-bottom: 1px solid seashell;
+  display: flex;
+  align-items: center; /* Vertically centers the logo and links */
+  justify-content: space-between; /* Pushes logo left, nav right */
+  position: fixed; /* Keeps header at the top while scrolling */
+  z-index: 1;
+  opacity: 0.9;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+  font-family: Helvetica; 
+}
+
+.navhead a {
+  text-decoration: underline;
+
+}
+
+#background {
+  height: 700px;
+}
+
+#mission {
+  /* 1. Set the background image */
+  background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  /* 2. Set the dimensions from the spec */
+  height: 700px;
+  width: 1200px;
+  margin: 0 auto; /* Centers the whole section on the page */
+
+  /* 3. The centering magic */
+  display: flex;
+  align-items: center; /* Centers the black bar vertically */
+}
+
+.content {
+  background-color: black;
+  width: 100%; /* Spans the full width of the container as shown */
+  text-align: center;
+}
+
+/* Monthly Teas Below */
+#month {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* This allows items to move to a new row */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.teaimg {
+  display: flex;
+  width: 300px;
+  margin: 10px;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.teaimg img {
+  height: 200px; /* From the spec sheet */
+  width: 300px;  /* From the spec sheet */
+  display: block;
+}
+
+.teaimg span {
+  display: block;
+  padding: 10px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*Locations Section Below */
+#locations {
+  /* 1. Background Setup */
+  background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg?_gl=1*tjwxku*_gcl_aw*R0NMLjE3NzI2MDMyNTMuQ2p3S0NBaUFxcHJOQmhCNkVpd0FNZTN5aG9YRkJpaDAwWk5QY2tTdjQ3RFVpRVdnbHltZDVfNkNjODlmVGJsanZpaXJDR3dKb3dQUG14b0NUM0lRQXZEX0J3RQ..*_gcl_au*NDYzNDU4MTUxLjE3NzI2MDMyNTM.*_ga*Nzg1NDAwMzY4Mi4xNzcyNjAzMjUw*_ga_3LRZM6TM9L*czE3NzU0MzU3MTkkbzQyJGcxJHQxNzc1NDM3NDIzJGo1OCRsMCRoMA..");
+  height: 500px; /* From spec */
+  width: 1200px; /* From spec */
+  margin: 0 auto;
+  padding-top: 0x; /* Space for the "Locations" heading */
+  text-align: center;
+}
+
+.location-container {
+  display: flex;
+  justify-content: center; /* Spaces cards evenly */
+  align-items: center;    /* Centers them vertically in the 500px height */
+  height: 400px;          /* Adjusted to leave room for the title */
+  margin-top: 30px;
+}
+
+.card {
+  background-color: black;
+  width: 300px;   /* From spec */
+  margin: 0 20px; /* 40px total between cards as per spec */
+  padding: 10px;
+  opacity: 1;     /* Ensure text is fully visible over the dark background */
+}
+
+.card h3, .card p {
+  margin: 20px 0; /* Creates that airy spacing inside the cards */
+}
+
+#locations h2 {
+  margin-top: 30px;
+  margin-bottom: 15px; /* Shrinks the gap below the title */
+  padding-top: 50px;    /* Keeps the title from touching the top of the image */
+  position: relative;
+  top: 85px;
+}
+
+footer {
+  height: 200px; /* From spec */
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Stacks the h2 and h5s vertically */
+  align-items: center;    /* Centers them horizontally */
+  justify-content: center; /* Centers the whole group vertically in the 200px */
+  margin-top: -40px;
+}
+
+footer h2 {
+  margin-bottom: 20px; /* Adds a little breathing room */
+}
+
+footer h5 {
+  margin: 10px 0; /* Consistent spacing for email and phone */
+}
+
+.copyright {
+  text-align: left;
+  margin-left: 20px;
+  padding: 20px 0; /* Adds some space from the bottom of the window */
+}
+
+
